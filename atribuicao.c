@@ -14,7 +14,7 @@ printf("Valor da minha variavel:%d", valor);
 return 0;
 
 }
-*/
+
 
 float numero = 3.1415;
 
@@ -27,6 +27,17 @@ int main() {
     printf("Digite um numero real: ");
     scanf("%f", &numero);
     printf("O valor digitado foi %.2f", numero);
+
+return 0;
+}
+*/
+
+char sexo = 's';
+
+int main() {
+    printf("Digite seu sexo: (f, F, m ou M)");
+    scanf("%c", &sexo);
+    printf("valor da variavel sexo:%c", sexo);
 
 return 0;
 }
