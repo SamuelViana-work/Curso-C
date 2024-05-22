@@ -87,12 +87,8 @@ int main(){
 
 return 0;
 }
-*/
-
-
 
 //CRIANDO UM PROGRAMA PRA LER NOME, IDADE, PESO E ALTURA
-
 char sexo;
 int idade;
 float peso, altura;
@@ -103,9 +99,51 @@ int main(){
     printf("SEXO: %c\n IDADE: %d\n PESO: %.3f\n ALTURA: %2.f\n", sexo, idade, peso, altura);
 
 
+}
+return 0;
+
+// EXIBINDO O TAMANHO DE UMA VARIAVEL NA MAEMÓRIA
+
+int main(){
+    printf("O tamanho de um float na memoria eh: %d bytes\n", sizeof(float));
+
+    return 0;
+}
+
+// INCREMENTANDO 1 A UM VALOR 
+
+short int x = 664;
+
+int main(){
+    x++;
+    printf("Valor de x = %d\n", x);
 
 return 0;
 }
+
+long long int x = 100000000;
+
+int main(){
+    printf("Tamano de x:  ")
+}
+
+
+*/
+
+float x = 3.1415;
+
+int main(){
+    printf("UMA VARIAVEL DO TIPO FLOAT OCUPA:%.4f\n",x );
+
+}
+
+
+
+
+
+
+
+
 
 
 
