@@ -127,15 +127,57 @@ int main(){
     printf("Tamano de x:  ")
 }
 
-
-*/
-
 float x = 3.1415;
 
 int main(){
     printf("UMA VARIAVEL DO TIPO FLOAT OCUPA:%.4f\n",x );
 
 }
+
+long double x = 6.6669;
+
+int main(){
+    printf("Uma variavel long float ocupa %d bytes na memoria\n", sizeof(x));
+    __mingw_printf("a variavel x tem o valor de: %.4Lf\n", x);
+
+return 0;
+}
+
+            //---CARACTERE DE ESCAPE---
+int main(){
+    printf("\n ESPACAMENTO\n");
+    printf("\t TABULACAO\n");
+    printf(" \"\ \'\ \n");
+    printf("\\\n");
+
+return 0;
+
+}
+            //---OPERACOES MATEMATICAS E CONVERSAO DE TITULO---
+int a = 666, b = 69;
+
+int main(){
+    printf("RESULTADO DA SOMA \'A'\ + \'B'\:%d\n", a+b);
+    printf("RESULTADO DA SUBTRACAO \'A'\ - \'B'\:%d\n", a-b);
+    printf("RESULTADO DA MULTIPLICACAO \'A'\ * \'B'\:%d\n", a*b);
+    printf("RESULTADO DA DIVISAO \'A'\ / \'B'\:%d\n", a/(float)b);
+    
+return 0;
+}
+
+*/
+
+            //---OPERADOR DE RESTO DA DIVISAO---
+int a = 10, b = 7;
+
+int main(){
+    printf("Resto da divisao inteira %d\n", a % b);
+
+
+return 0;
+}
+
+
 
 
 
