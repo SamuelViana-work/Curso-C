@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h> 
+//setlocale(LC_ALL, "English");
 
 /*
             ---ATRIBUINDDO VALOR A UMA VARIAVEL DO TIPO INT---
@@ -165,8 +167,6 @@ int main(){
 return 0;
 }
 
-*/
-
             //---OPERADOR DE RESTO DA DIVISAO---
 int a = 10, b = 7;
 
@@ -176,6 +176,36 @@ int main(){
 
 return 0;
 }
+
+            //---OPERADOR DE INCREMENTO---
+
+
+int contador = 69;
+
+int main(){
+    printf("Valor: %d\n", ++contador);
+    //para decremento é a mesma coisa só que com o --
+
+
+return 0;
+}
+
+            //---UTILIZANDO ACENTUAÇÃO---
+    //setscale(LC_ALL, NULL)->PADRAO DA LINGUAGEM C
+    //setscale(LC_ALL, "")->PADRAO DA LINGUAGEM DO SISTEMA OPERACIONAL
+    //setscla(LC_ALL, "Portuguese")->PADRAO DA LINGUA DEFINIDA ENTRE ""(aconcelhavel que seja a mesma do SO)
+ int main(){
+    printf("%s\n", setlocale(LC_ALL,NULL));
+
+    printf("BATATÃO");
+
+return 0;
+ }
+ 
+*/
+
+
+
 
 
 
