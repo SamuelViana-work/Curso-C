@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h> 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 /*Curso de Programação C – Professor Wagner Gaspar
 Exercícios: lista 1
 
@@ -62,7 +65,11 @@ int main(){
     setlocale(LC_ALL,"Portuguese");
     printf("\n\t RESPOSTA DA QUESTÃO 3:\n X=%d Y=%d\n", x, y);
 
+<<<<<<< HEAD
 return 0;
+=======
+    
+>>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 }
 */
 
@@ -72,6 +79,7 @@ porcentagem) e o número de pessoas para dividir a conta. Imprima o valor que ca
 Assuma que a conta será dividida igualmente.
 */
 
+<<<<<<< HEAD
 float conta, gorjeta, despesa;
 int pagantes;
 
@@ -94,4 +102,13 @@ int main(){
     printf("\n\t O valor que deverá ser pago por cada pagante é: R$ %.2f",(conta+gorjeta)/pagantes);
 
 return 0;
+=======
+float despesa, gorjeta;
+int pagantes;
+
+int main(){
+    printf("\n\t BEM VINDO AO RESTAURANTE 'PAGA CARO'\n");
+    printf("\n\t Insira o valor da despesa:\n");
+    scanf
+>>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 }

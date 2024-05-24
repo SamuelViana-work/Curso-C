@@ -90,7 +90,11 @@ int main(){
 return 0;
 }
 
+<<<<<<< HEAD
             //CRIANDO UM PROGRAMA PRA LER NOME, IDADE, PESO E ALTURA
+=======
+//CRIANDO UM PROGRAMA PRA LER NOME, IDADE, PESO E ALTURA
+>>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 char sexo;
 int idade;
 float peso, altura;
@@ -104,7 +108,11 @@ int main(){
 }
 return 0;
 
+<<<<<<< HEAD
             // EXIBINDO O TAMANHO DE UMA VARIAVEL NA MAEMÓRIA
+=======
+// EXIBINDO O TAMANHO DE UMA VARIAVEL NA MAEMÓRIA
+>>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 
 int main(){
     printf("O tamanho de um float na memoria eh: %d bytes\n", sizeof(float));
@@ -112,7 +120,11 @@ int main(){
     return 0;
 }
 
+<<<<<<< HEAD
             // INCREMENTANDO 1 A UM VALOR 
+=======
+// INCREMENTANDO 1 A UM VALOR 
+>>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 
 short int x = 664;
 
