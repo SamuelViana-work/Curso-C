@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h> 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 /*Curso de Programação C – Professor Wagner Gaspar
 Exercícios: lista 1
 
@@ -17,11 +14,6 @@ sabendo que são descontados 8% para imposto de renda.
 como taxa de câmbio US$1,0 = R$5,30. Leia um valor em Reais e mostre o correspondente em
 Dólares.
 
-7) Faça um programa para ler do teclado uma quantidade de segundos e imprimir na tela a
-conversão para horas, minutos e segundos.
-Exemplo:
-Entrada: 3672
-Saída: 1:1:12
 
 */
 
@@ -65,11 +57,7 @@ int main(){
     setlocale(LC_ALL,"Portuguese");
     printf("\n\t RESPOSTA DA QUESTÃO 3:\n X=%d Y=%d\n", x, y);
 
-<<<<<<< HEAD
 return 0;
-=======
-    
->>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 }
 */
 
@@ -77,9 +65,7 @@ return 0;
 4) Escreva um programa que leia um valor de despesa de restaurante, o valor da gorjeta (em
 porcentagem) e o número de pessoas para dividir a conta. Imprima o valor que cada um deve pagar.
 Assuma que a conta será dividida igualmente.
-*/
 
-<<<<<<< HEAD
 float conta, gorjeta, despesa;
 int pagantes;
 
@@ -102,13 +88,21 @@ int main(){
     printf("\n\t O valor que deverá ser pago por cada pagante é: R$ %.2f",(conta+gorjeta)/pagantes);
 
 return 0;
-=======
-float despesa, gorjeta;
-int pagantes;
+}
+
+            //---QUESTÃO 7---
+7) Faça um programa para ler do teclado uma quantidade de segundos e imprimir na tela a
+conversão para horas, minutos e segundos.
+Exemplo:
+Entrada: 3672
+Saída: 1:1:12
+
+*/
+int seg;
 
 int main(){
-    printf("\n\t BEM VINDO AO RESTAURANTE 'PAGA CARO'\n");
-    printf("\n\t Insira o valor da despesa:\n");
-    scanf
->>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
+    printf("INSIRA O HORARIO EM SEGUNDOS:");
+    scanf("%d",&seg);
+    printf("O HORARIO INSERIDO NO MODELO H/M/S É: %d:%d:%d ", )
+
 }

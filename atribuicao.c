@@ -90,11 +90,7 @@ int main(){
 return 0;
 }
 
-<<<<<<< HEAD
             //CRIANDO UM PROGRAMA PRA LER NOME, IDADE, PESO E ALTURA
-=======
-//CRIANDO UM PROGRAMA PRA LER NOME, IDADE, PESO E ALTURA
->>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 char sexo;
 int idade;
 float peso, altura;
@@ -108,11 +104,7 @@ int main(){
 }
 return 0;
 
-<<<<<<< HEAD
             // EXIBINDO O TAMANHO DE UMA VARIAVEL NA MAEMÓRIA
-=======
-// EXIBINDO O TAMANHO DE UMA VARIAVEL NA MAEMÓRIA
->>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 
 int main(){
     printf("O tamanho de um float na memoria eh: %d bytes\n", sizeof(float));
@@ -120,11 +112,7 @@ int main(){
     return 0;
 }
 
-<<<<<<< HEAD
             // INCREMENTANDO 1 A UM VALOR 
-=======
-// INCREMENTANDO 1 A UM VALOR 
->>>>>>> 37f8680aeb3fbb230c1c7725a82472e9fbd36e8f
 
 short int x = 664;
 
@@ -214,6 +202,111 @@ return 0;
 return 0;
  }
  
+
+            ---OPERADOR LOGICO "IF/ELSE" &&---
+int idade;
+char sexo;
+
+int main(){
+    printf("DIGITE SEU SEXO 'M' OU 'F' E SUA IDADE:");
+    scanf("%c""%d",&sexo, &idade);
+
+    if(idade ==18 && sexo == 'm')
+        printf("ALISTAMENTO OBRIGATORIO!!!");
+    else
+        printf("METE O PEH!!!");
+
+return 0;
+
+}
+
+            ---OPERADOR LOGICO "OU" ||
+
+int idade;
+
+int main(){
+    printf("DIGITE SUA IDADE:");
+    scanf("%d", &idade);
+    if(idade<=5 || idade>=60){
+        printf("TEM DIREITO A GRATUIDADE!!!");
+    }
+    else{
+        printf("NAO TEM DIREITO A GRATUIDADE");
+    }
+
+return 0;
+}
+
+            ---SWITCH CASE---
+int opcao;
+int main(){
+    
+    printf("\n\t SEJA BEM VINDO AO MENU\n");
+    printf("\n 1 - CADASTRO\n 2 - VENDER\n 3 - BUSCAR\n 4 - IMPRIMIR\n 5 - SAIR\n ");
+    scanf("%d", &opcao);
+
+    switch(opcao){
+    case 1:
+        printf("CADASTRANDO\n");
+        break;
+    case 2:
+        printf("VENDENDO\n");
+        break;
+    case 3:
+        printf("BUSCANDO\n");
+        break;
+    case 4:
+        printf("IMPRIMINDO\n");
+        break;
+    case 5:
+        printf("SAINDO\n");
+        break;
+    default:
+        printf("OPCAO INVALIDA\n");
+    }
+return 0;
+}
+
+Lista de Exercícios II - Professor Wagner Gaspar
+Estruturas de decisão e seleção
+1) Escreva um programa em C que leia três valores e apresente qual é o maior e qual é o menor.
+2) Escreva um programa em C que lê 5 números inteiros, um por vez. Conte quantos destes valores
+são negativos e quantos são positivos. Ao final, imprima na tela a quantidade de números negativos
+e positivos.
+3) Escreva um programa em C que leia um número e informe se ele é divisível por 2, por 3 ou por
+5, ou se não é divisível por nenhum deles.
+4) Crie um programa que permita ao usuário escolher entre fazer a conversão de Real para Dólar ou
+de Dólar para Real. Utilize como taxa de câmbio $1 igual a R$5.30.
+5) O IMC (Índice de Massa Corporal), pode ser calculado dividindo-se o peso da pessoa (em kg)
+pela altura (h em metros) elevada ao quadrado (IMC= m/h2). Escreva um programa que leia o peso
+e a altura de uma pessoa, calcule e mostre o IMC e a faixa em que o indivíduo se enquadra de cordo
+com a tabela abaixo:
+
+IMC Interpretação
+Menor que 18,5 Abaixo do peso
+Entre 18,5 e menor que 25 Peso normal
+Entre 25 e menor que 30 Sobrepeso
+Entre 30 e menor que 35 Obesidade grau 1
+Entre 35 e menor que 40 Obesidade grau 2
+Maior ou igual a 40 Obesidade grau 3
+6) Faça um programa para ler um número inteiro e verificar se corresponde a um mês válido no
+calendário. Caso corresponda, escrever o nome do mês, caso contrário, escrever a mensagem ‘Mês
+Inválido’.
+7) Faça um programa que peça ao usuário um caracter e diga se é uma vogal ou não.
+8) Elabore um programa que, dado o número do mês, indica quantos dias têm esse mês. Utilize para
+isso a estrutura de seleção switch.
+Obs.: Considere fevereiro como tendo 28 dias.
+9) Um usuário deseja um programa onde possa escolher que tipo de média deseja calcular a partir
+de três notas. Faça um programa que leia as notas e o tipo da média escolhida pelo usuário e calcule
+a apresente a média:
+Opções:
+• ‘a’ - Aritmética.
+• ‘p’ - Ponderada (pesos: 3,3,4).
+10) Faça um programa que, dado três valores a, b e c, verifique se eles podem ser os comprimentos
+dos lados de um triângulo. Caso positivo, seu programa deve informar também se o triângulo é
+equilátero, isósceles ou escaleno. Caso contrário, seu programa deve escrever a mensagem “Não
+formam um triângulo”.
+
 */
 
 
