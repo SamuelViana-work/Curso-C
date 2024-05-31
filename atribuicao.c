@@ -310,6 +310,18 @@ formam um triângulo”.
 */
 
 
+int b=0;
+
+int main(){
+ 
+
+    for(b = 0; b <= 9; b++)
+    printf("%d ", b);
+
+
+return 0;
+}
+
 
 
 
