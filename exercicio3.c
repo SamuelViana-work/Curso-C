@@ -25,16 +25,12 @@ Saída:
 de senha incorreta informada, escrever a mensagem “Senha Invalida”. Quando a senha for
 informada corretamente deve ser impressa a mensagem “Acesso Permitido” e o programa deve ser
 encerrado. Considere que a senha correta é o valor 123456.
-3) Faça um programa que some os números ímpares entre 1 e 1000 e imprima a resposta.
-4) Faça um programa que some os números ímpares entre 1 e 1000 e imprima a resposta.
-Restrição:
-→ O bloco de repetição deve executar no máximo 500 vezes.
-5) Faça um programa que leia as notas referentes às duas avaliações de um aluno. Calcule e
-imprima a média semestral. Faça com que o programa só aceite notas válidas (uma nota válida deve
-pertencer entre o intervalo de 0 a 10). Cada nota deve ser validada separadamente.
-6) Faça um programa que imprima na tela todos os múltiplos de 7 entre 1 e 9999.
-7) Leia um valor inteiro N. Apresente o quadrado de cada um dos valores pares, de 1 até N,
-inclusive N, se for o caso.
+
+
+
+
+
+
 8) Escreva um programa em C que funcione como uma calculadora. O programa deve apresentar
 um menu ao usuário da seguinte forma:
 1 – Somar
@@ -160,4 +156,186 @@ deseja ou não executar o programa novamente. Se for informado o código 1, deve
 execução de todo o programa para permitir um novo cálculo, se for informado o código 2 o
 programa deve ser encerrado.
 
+3) Faça um programa que some os números ímpares entre 1 e 1000 e imprima a resposta.
+int i, soma=0;
+
+int main(){
+    for(i=1; i<=1000; i++)
+        if(i % 2 == 1)
+            soma +=1;
+    printf("SOMA DOS IMPARES DE 1 A 1000: %d", soma);
+
+return 0;
+}
+
+4) Faça um programa que some os números ímpares entre 1 e 1000 e imprima a resposta.
+Restrição:
+→ O bloco de repetição deve executar no máximo 500 vezes.
+
+int i, soma=0;
+
+int main(){
+    for(i=1; i<=1000; i+=2)
+            soma +=1;
+    printf("SOMA DOS IMPARES DE 1 A 1000: %d", soma);
+
+return 0;
+}
+
+5) Faça um programa que leia as notas referentes às duas avaliações de um aluno. Calcule e
+imprima a média semestral. Faça com que o programa só aceite notas válidas (uma nota válida deve
+pertencer entre o intervalo de 0 a 10). Cada nota deve ser validada separadamente.
+
+float a1, a2, media;
+int main(){
+
+    printf("\n\t INSIRA SUA NOTA DA A1:\n");
+    scanf("%f", &a1 );
+    
+    if(a1<0 || a1>100)
+        do{
+            printf("\n\t NOTA INVALIDA!\n\t POR FAVOR INSIRA UMA NOTA VALIDA:\n");
+            scanf("%f", &a1);
+            }while (a1<0 || a1>100);
+    
+    printf("\n\t INSIRA SUA NOTA DA A2:\n");
+    scanf("%f", &a2 );
+    
+    if(a2<0 || a2>100)
+        do{
+            printf("\n\t NOTA INVALIDA!\n\t POR FAVOR INSIRA UMA NOTA VALIDA:\n");
+            scanf("%f", &a2);
+            }while (a2<0 || a2>100);
+    
+    media = (a1+a2)/2;
+    
+    printf("SUA MEDIA SEMESTRAL EH: %.2f", media);
+
+return 0;
+}
+
+6) Faça um programa que imprima na tela todos os múltiplos de 7 entre 1 e 9999.
+int i;
+
+int main(){
+    for(i=0; i<=10000; i+=7)
+       printf("%d ",i);
+
+}
+
+7) Leia um valor inteiro N. Apresente o quadrado de cada um dos valores pares, de 1 até N,
+inclusive N, se for o caso.
+
+
+8) Escreva um programa em C que funcione como uma calculadora. O programa deve apresentar
+um menu ao usuário da seguinte forma:
+1 – Somar
+2 – Subtrair
+3 – Multiplicar
+4 – Dividir
+0 – Sair
+
+Uma estrutura do tipo switch deve ser utilizada para realizar cada operação em um case. Após a
+escolha da operação, dois valores devem ser pedidos ao usuário para realizar a operação escolhida.
+Se a operação escolhida for a 4 o dividendo não pode ser zero, um novo valor deve ser solicitado. O
+programa deve funcionar até que o usuário escolha a opção 0 (opção de saída).
+
+int soma, subtracao, multiplicacao, divisao, resto, escolha, fator1, fator2;
+float fator01, fator02;
+
+int main(){
+
+    do
+    {
+        printf("\n\t ***OPCAO INVALIDA***\n\tESCOLHA DE 0 A 4 SENDO:\n\t1 - SOMAR\n\t2 - SUBTRAIR\n\t3 - MULTIPLICAR\n\t4 - DIVIDIR\n\t0 - SAIR\n");
+        scanf("%d", &escolha);
+    } while (escolha < 0 || escolha > 4);
+    
+    do
+    {
+        printf("\n\t ***CALCULADORA***\n\tESCOLHA DE 0 A 4 SENDO:\n\t1 - SOMAR\n\t2 - SUBTRAIR\n\t3 - MULTIPLICAR\n\t4 - DIVIDIR\n\t0 - SAIR\n");
+        scanf("%d", &escolha);
+    } while (escolha != 0);
+    printf("\n\t ***CALCULADORA***\n\tESCOLHA DE 0 A 4 SENDO:\n\t1 - SOMAR\n\t2 - SUBTRAIR\n\t3 - MULTIPLICAR\n\t4 - DIVIDIR\n\t0 - SAIR\n");
+    scanf("%d", &escolha);
+    soma=fator1+fator2;
+
+    switch(escolha){
+    case 0:
+    exit(0);
+    case 1:
+    printf ("INSIRA DOIS NUMEROS QUE DESEJA SOMAR:");
+    scanf("%d%d", &fator1, &fator2);
+    soma=fator1+fator2;
+    printf("SOMA =%d",soma);
+    break;
+
+    case 2:
+    printf ("INSIRA DOIS NUMEROS QUE DESEJA SUBTRAIR:");
+    scanf("%d%d", &fator1, &fator2);
+    subtracao=fator1-fator2;
+    printf("SUBTRACAO =%d",subtracao);
+    break;
+
+    case 3:
+    printf ("INSIRA DOIS NUMEROS QUE DESEJA MULTIPLICAR:");
+    scanf("%d%d", &fator1, &fator2);
+    multiplicacao=fator1*fator2;
+    printf("MULTIPLICACAO =%d",divisao);
+    break;
+
+    case 4:
+    printf ("INSIRA DOIS NUMEROS QUE DESEJA DIVIDIR:");
+    scanf("%f%f", &fator01, &fator02);
+    divisao=fator01/fator02;
+    resto= fator01 % fator02;
+    printf("DIVISAO = %.2f\n RESTO = %.2f", divisao,resto);
+    break;
+    
+    default:
+    printf("\n\t ***OPCAO INVALIDA***\n\tESCOLHA DE 0 A 4 SENDO:\n\t1 - SOMAR\n\t2 - SUBTRAIR\n\t3 - MULTIPLICAR\n\t4 - DIVIDIR\n\t0 - SAIR\n");
+    scanf("%d", &escolha);
+    }
+    
+return 0;    
+}
+
+9) Faça um programa que calcule o valor de A, dado por:
+A = 1 + 2 + 3 + 4 + ... + n, onde n é um número inteiro, maior que zero informado pelo usuário.
+int n,i, A = 0;
+
+int main(){
+    do
+    {
+    printf("\n\t INFORME UM NUMERO INTEIRO\n");
+    scanf("%d", &n);
+    } while(n<=0);
+    
+        for(i=1; i<=n; i++);
+        A = A + i;
+        printf("SOMA DE 1 ATE %d: %d\n\n", n, A);
+
+return 0;
+
+}
+
+10) Você decidiu ficar rico guardando dinheiro por 30 dias consecutivos. Para tal, decidiu guardar 1
+centavo no primeiro dia, 2 centavos no segundo dia, 4 centavos no terceiro dia, 8 centavos no quarto
+dia, e assim por diante. Faça um programa para calcular quanto você terá ao final dos 30 dias.
 */
+int i, valorInicial = 1, valorFinal = 1;
+
+int main(){
+    for(i = 1; i <= 29; i++){
+        valorInicial = valorInicial *2;
+        valorFinal += valorInicial;
+    }
+    printf("VALOR EM CENTAVOS: %d\n", valorFinal);
+    printf("R$%.2f\n\n", valorFinal/100.0);
+
+return 0;
+}
+
+
+
+
